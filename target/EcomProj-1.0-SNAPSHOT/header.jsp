@@ -22,19 +22,21 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <a class="navbar-brand" href="http://localhost:${pageContext.request.localPort}${pageContext.request.contextPath}/index.jsp">SmartShop</a>
+    <a class="navbar-brand" href="http://localhost:${pageContext.request.localPort}${pageContext.request.contextPath}/index.jsp">MobiShop</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
+      
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="/EcomProj/index.jsp">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/EcomProj/Aboutus.jsp">About Us</a>
-            </li>
+    
+    
+   <div class="navbar ml-auto dropdown" style="font-size: 18px; padding: 0;">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black;">
+                        Welcome Admin
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/EcomProj/Category/AddCategory.jsp"><i>AddCategory</i></a>
+                        <a class="dropdown-item" href="/EcomProj/Product/AddProduct.jsp"><i>AddProduct</i></a>
+                        </div>
         </ul>
 
 
@@ -68,7 +70,7 @@
                         <a class="dropdown-item" href="/EcomProj/User/Profile.jsp"><i>Profile</i></a>
                         <a class="dropdown-item" href="#"><i>Orders</i></a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="http://localhost:8080/EcomProj/Logout">Logout</a>
+                        <a class="dropdown-item" href="http://localhost:9082/EcomProj/Logout">Logout</a>
                     </div>
                 </div>
 
@@ -81,7 +83,7 @@
                         <a class="nav-link" href="/EcomProj/User/Login.jsp"> <i class="fas fa-user"></i> Log In</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://localhost:8080/EcomProj/User/Registration.jsp"> <i class="fas fa-user-plus"></i> SignUp</a>
+                        <a class="nav-link" href="http://localhost:9082/EcomProj/User/Registration.jsp"> <i class="fas fa-user-plus"></i> SignUp</a>
                     </li>
                 </ul>
             </c:otherwise>

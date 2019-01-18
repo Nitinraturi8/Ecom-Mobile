@@ -40,16 +40,11 @@
                   
                 %>
                 
-                ${userObject}
+                
         <c:choose>
 
             <c:when test="${not empty userObject}">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item nav-link">Welcome ${userObject.getUsername()}</li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">">Log Out</a>
-                    </li>
-                </ul>
+                
             </c:when>
             
             <c:otherwise>
